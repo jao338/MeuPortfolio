@@ -85,5 +85,47 @@ header{
     cursor: pointer;
 }
 
+.section-home{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    background-image: url(../img/teste2.jpg);
+}
+
+.home-left,
+.home-mid,
+.home-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1; 
+    height: 45vh;
+}
+
+.home-right, 
+.home-left, h1{
+    color: var(--white);
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+.home-left, 
+.home-right p{
+    color: var(--white);
+    text-align: center;
+    font-size: 16pt;
+}
+
+.home-mid-img{
+    width: 304px;
+    height: 304px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid var(--blue4); 
+}
+
 
 
