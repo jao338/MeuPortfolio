@@ -217,7 +217,8 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-left: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
     margin-bottom: 32px;
     width: 192px;
     height: 216px;
@@ -485,10 +486,6 @@ footer img:first-child {
     .section-contact-down {
         width: 80%;
     }
-
-    .section-skills-card {
-        margin-left: 24px;
-    }
 }
 
 
@@ -584,4 +581,24 @@ footer img:first-child {
     }
 
 }
+
+@media only screen and (max-width: 400px){
+
+    .section-home{
+        height: 60vh;
+    }
+
+    .home-mid-img {
+        width: 256px;
+        height: 256px;
+    }
+
+    .home-mid-img img {
+        width: 204px;
+        height: 204px;
+
+    }
+
+}
+
 
