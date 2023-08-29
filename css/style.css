@@ -149,10 +149,11 @@ header {
     flex-direction: column;
     display: flex;
     align-items: center;
+    padding: 64px;
 }
 
 .about-left h1{
-    font-size: 32pt;
+    font-size: 40pt;
 }
 
 .about-left p{
@@ -171,11 +172,121 @@ header {
     align-items: center;
 }
 
-.section-skils{
-    height: 70vh;
+.section-skills{
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blue3);
 }
 
-.cards{
+.section-skills h1{
+    font-size: 40pt;
+    color: var(--white);
+}
+
+.section-skills-cards{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    max-width: 60vw;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    color: var(--white);
+}
+
+.section-skills-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    width: 192px;
+    height: 216px;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border: 2px solid var(--blue1);
+}
+
+.section-skills-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.section-skills-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 20%;
+}
+
+.section-projects{
+    padding-top: 64px;
+    background-color: var(--blue2);
+}
+
+.section-projects h1{ 
+    font-size: 40pt;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.section-all-projects, 
+.section-web-projects,
+.section-cg-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 64px;
+    height: 60vh;
+}
+
+.section-projects-titles{
+    font-size: 16pt;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.section-projects-content{
+    display: flex;
+    height: 60vh;
+}
+
+.section-project{
+    margin-right: 32px;
+    border: 2px solid;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    height: 90%;
+    width: 504px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-project-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    border-bottom: 1px solid;
+}
+
+.section-project-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 20%;
 }
