@@ -1,9 +1,7 @@
 //Adiciona os efeitos de transição entre os links e as sections
-
 document.querySelectorAll('ul li a').forEach((item) => {
 
     item.addEventListener('click', function(e){
-
 
         //Previne o comportamento padrão do link
         e.preventDefault();
@@ -18,9 +16,9 @@ document.querySelectorAll('ul li a').forEach((item) => {
             behavior: 'smooth'
         });        
 
-    })
-
+    });
 });
+
 
 // Adiciona um evento aos inputs de contato, alterando a espessura da borda e adicionando uma margem no top dos inputs
 document.querySelectorAll('.input-contact').forEach((input) => {
@@ -80,6 +78,4 @@ document.querySelectorAll('.btn-view').forEach((item) => {
 
     })
 });
-
-
 
