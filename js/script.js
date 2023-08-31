@@ -79,3 +79,24 @@ document.querySelectorAll('.btn-view').forEach((item) => {
     })
 });
 
+//Adiciona um evento de click ao menu mobile que o abre
+document.querySelector('.menu-mobile').addEventListener('click', () => {
+
+    let menu = document.querySelector('.div-menu-mobile');
+
+    menu.style.left = '0vw';
+    menu.style.opacity = 100;
+
+});
+
+// Adiciona um evento de click ao menu mobile que o fecha
+document.querySelector('.close-menu-mobile img').addEventListener('click', () => {
+
+    let menu = document.querySelector('.div-menu-mobile');
+
+    menu.style.left = '100vw';
+    menu.style.opacity = 0;
+ 
+});
+
+
