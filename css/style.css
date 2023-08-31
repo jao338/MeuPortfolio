@@ -43,7 +43,6 @@ header {
     justify-content: center;
     width: 80vw;
     height: 10vh;
-
 }
 
 .menu-left {
@@ -112,7 +111,7 @@ header {
     top: 0;
     left: 100vw;
     overflow-x: hidden;
-    transition: all .25s;
+    transition: all .8s;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -120,12 +119,16 @@ header {
 
 .close-menu-mobile{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 12vh;
     padding-right: 32px;
     background-color: var(--blue2);
+}
+
+.close-menu-mobile img:first-child{
+    margin-left: 32px;
 }
 
 .content-menu-mobile{
@@ -159,6 +162,9 @@ header {
     font-weight: 700;
 }
 
+.links-menu-mobile{
+    margin-top: 16px;
+}
 .section-home {
     display: flex;
     align-items: center;
@@ -450,11 +456,11 @@ header {
     animation: btn-send 3s infinite alternate;
 }
 
-
 footer {
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    align-items: center;
+    height: 12vh;
     background-color: var(--blue2);
 }
 
@@ -471,11 +477,10 @@ footer img {
 
 footer img:first-child {
     margin-left: 16px;
-    
+
 }
 
 @media only screen and (max-width: 1400px) {
-
 
     .section-home {
         display: flex;
@@ -545,7 +550,6 @@ footer img:first-child {
     }
 
 }
-
 
 @media only screen and (max-width: 1205px) {
 
@@ -646,7 +650,6 @@ footer img:first-child {
 
 }
 
-
 @media only screen and (max-width: 700px){
 
     footer{
@@ -675,7 +678,6 @@ footer img:first-child {
         justify-content: center;
     }
 
-    
 }
 
 @media only screen and (max-width: 600px){

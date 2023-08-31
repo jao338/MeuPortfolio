@@ -19,6 +19,38 @@ document.querySelectorAll('ul li a').forEach((item) => {
     });
 });
 
+//Adiciona os efeitos de transição entre os links e as sections
+document.querySelector('.menu-left a').addEventListener('click', function(e){
+
+    e.preventDefault();
+
+    //Obtém o valor do atributo "href" e remove o caractere "#", resultando apenas no id da section
+    const targetId = this.getAttribute('href').substring(1);
+
+    //Obtém o elemento do alvo, no caso a própria section com base no id
+    const targetSection = document.getElementById(targetId);
+
+    targetSection.scrollIntoView({
+        behavior: 'smooth'
+    });   
+
+});
+
+document.querySelector('footer a:first-child').addEventListener('click', function(e){
+
+    e.preventDefault();
+
+    //Obtém o valor do atributo "href" e remove o caractere "#", resultando apenas no id da section
+    const targetId = this.getAttribute('href').substring(1);
+
+    //Obtém o elemento do alvo, no caso a própria section com base no id
+    const targetSection = document.getElementById(targetId);
+
+    targetSection.scrollIntoView({
+        behavior: 'smooth'
+    });   
+
+});
 
 // Adiciona um evento aos inputs de contato, alterando a espessura da borda e adicionando uma margem no top dos inputs
 document.querySelectorAll('.input-contact').forEach((input) => {
@@ -90,7 +122,7 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
 });
 
 // Adiciona um evento de click ao menu mobile que o fecha
-document.querySelector('.close-menu-mobile img').addEventListener('click', () => {
+document.querySelector('.close-menu-mobile img:last-child').addEventListener('click', () => {
 
     let menu = document.querySelector('.div-menu-mobile');
 
@@ -99,4 +131,16 @@ document.querySelector('.close-menu-mobile img').addEventListener('click', () =>
  
 });
 
+//Adiciona o evento de click as opções do menu mobile que fecha o menu mobile
+document.querySelectorAll('.content-menu-mobile ul li a').forEach((item) => {
 
+    item.addEventListener('click', () =>{
+
+        let menu = document.querySelector('.div-menu-mobile');
+
+        menu.style.left = '100vw';
+        menu.style.opacity = 0;
+
+    });
+    
+})
