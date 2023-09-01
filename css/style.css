@@ -395,7 +395,7 @@ header {
 .project-modal-img{
     width: 100%;
     height: 80%;
-    background-image: url(../img/imgs/projects/cg-project3.jpg);
+    background-image: url(../img/imgs/projects/1.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -419,59 +419,6 @@ header {
     padding-top: 32px;
     padding-right: 32px;
     cursor: pointer;
-}
-
-.all-1{
-    background-image: url(../img/imgs/projects/all-project3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.all-2{
-    background-image: url(../img/imgs/projects/all-project5.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.all-3{
-    background-image: url(../img/imgs/projects/all-project4.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.cg-1{
-    background-image: url(../img/imgs/projects/cg-project1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.cg-2{
-    background-image: url(../img/imgs/projects/cg-project2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.cg-3{
-    background-image: url(../img/imgs/projects/cg-project3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.web-1{
-    background-image: url(../img/imgs/projects/web-project1.jpg);
-    background-size: cover;
-}
-
-.web-2{
-    background-image: url(../img/imgs/projects/web-project2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.web-3{
-    background-image: url(../img/imgs/projects/web-project3.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .section-project-down {

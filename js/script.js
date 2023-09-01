@@ -171,10 +171,11 @@ document.querySelectorAll('.content-menu-mobile ul li a').forEach((item) => {
 });
 
 // Adiciona um evento de click aos botões que abre o modal
-document.querySelectorAll('.section-cg-projects .btn-view').forEach((item) => {
+document.querySelectorAll('.btn').forEach((item,index) => {
+
     item.addEventListener('click', () => {
 
-        openModal();
+        openModal(index);
 
     });
 });
@@ -184,15 +185,36 @@ document.querySelector('.close-modal img').addEventListener('click', () => {
 
     let modal = document.querySelector('.projects-modal');
 
-    modal.style.display = "none"
+    modal.style.display = "none";
 
 });
 
+window.onload = function(){
+
+    document.querySelectorAll('.section-project-up').forEach((item, index) => {
+
+        
+        item.style.backgroundImage = `url(../img/imgs/projects/${index + 1}.jpg)`;
+        item.style.backgroundSize = 'cover';
+        item.style.backgroundPosition = 'center';
+
+        //item.setAttribute('data-id', `${index + 1}`);
+        
+    });
+
+};
+
 // Abre o modal
-function openModal(){
+function openModal(index){
 
     let modal = document.querySelector('.projects-modal');
+    let modalImg = document.querySelector('.project-modal-img');
 
     modal.style.display = 'flex';
-    
+
+    if(index + 1 == 4 || index + 1 == 5 || index + 1 == 6){
+        modal.style.display = 'none';
+    }else{
+        modalImg.style.backgroundImage = `url(../img/imgs/projects/${index + 1}.jpg)`;
+    }
 }
