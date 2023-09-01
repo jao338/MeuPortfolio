@@ -29,6 +29,7 @@ header {
     background-color: var(--blue4);
     position: fixed;
     width: 100vw;
+    z-index: 999;
 
 }
 
@@ -355,7 +356,6 @@ header {
 
 .section-project {
     margin-right: 32px;
-    border: 3px solid var(--blue4);
     height: 90%;
     width: 504px;
     display: flex;
@@ -370,12 +370,105 @@ header {
     align-items: center;
     width: 100%;
     height: 80%;
-    border: 3px solid var(--blue4);
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
+    border: 3px solid var(--blue4);
+    cursor: pointer;
 }
 
-.section-cg-projects .section-project-up{
+.section-project:hover{
+    transform: scale(1.1);
+}
+
+.projects-modal{
+    position: fixed;
+    top: 12vh;
+    width: 80vw;
+    height: 88vh;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-modal-img{
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/imgs/projects/cg-project3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-modal-desc{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--blue2);
+}
+
+.close-modal{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-top: 32px;
+    padding-right: 32px;
+    cursor: pointer;
+}
+
+.all-1{
+    background-image: url(../img/imgs/projects/all-project3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.all-2{
+    background-image: url(../img/imgs/projects/all-project5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.all-3{
+    background-image: url(../img/imgs/projects/all-project4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cg-1{
+    background-image: url(../img/imgs/projects/cg-project1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cg-2{
+    background-image: url(../img/imgs/projects/cg-project2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cg-3{
+    background-image: url(../img/imgs/projects/cg-project3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.web-1{
+    background-image: url(../img/imgs/projects/web-project1.jpg);
+    background-size: cover;
+}
+
+.web-2{
+    background-image: url(../img/imgs/projects/web-project2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.web-3{
     background-image: url(../img/imgs/projects/web-project3.jpg);
     background-size: cover;
     background-position: center;
@@ -386,30 +479,62 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
-    height: 20%;
-}
-
-.section-project-img{
     width: 100%;
-    height: 100%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    height: 20%;
+    border-left: 3px solid var(--blue4);
+    border-right: 3px solid var(--blue4);
+    border-bottom: 3px solid var(--blue4);
 }
 
 .section-web-projects .section-project-down .btn-view:last-child{
     margin-left: 32px;
 }
 
+.section-web-projects .section-project-down .btn-demo{
+    margin-left: 32px;
+}
+
 .btn-view{
     font-size: 12pt;
-    width: 50%;
+    width: 35%;
     height: 40%;
     border: 2px solid var(--blue4);
     border-radius: 50px;
     color: var(--blue4);
     background-color: none;
     cursor: pointer;
+}
+
+.btn-github, .btn-demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 35%;
+    height: 40%;
+    border: 2px solid var(--blue4);
+    border-radius: 50px;
+    background-color: var(--white);
+    color: var(--blue4);
+}
+
+.btn-github:hover{
+    background-color: var(--blue2);
+    color: var(--white);
+    border: 3px solid var(--white);
+    
+}
+
+.btn-view:hover{
+    background-color: var(--blue2);
+    color: var(--white);
+    border: 3px solid var(--white);
+}
+
+.btn-demo:hover{
+    background-color: var(--blue2);
+    color: var(--white);
+    border: 3px solid var(--white);
 }
 
 .section-contact {

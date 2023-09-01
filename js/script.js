@@ -1,3 +1,51 @@
+let imgs = [
+
+    imgA = {
+        id: 1,
+        desc: "Lorem1"
+    },
+
+    imgB = {
+        id: 2,
+        desc: "Lorem2"
+    },
+
+    imgC = {
+        id: 3,
+        desc: "Lorem3"
+    },
+
+    imgD = {
+        id: 4,
+        desc: "Lorem4"
+    },
+
+    imgE = {
+        id: 5,
+        desc: "Lorem5"
+    },
+
+    imgF = {
+        id: 6,
+        desc: "Lorem6"
+    },
+
+    imgG = {
+        id: 7,
+        desc: "Lorem7"
+    },
+
+    imgH = {
+        id: 8,
+        desc: "Lorem8"
+    },
+
+    imgI = {
+        id: 9,
+        desc: "Lorem9"
+    }
+]
+
 //Adiciona os efeitos de transição entre os links e as sections
 document.querySelectorAll('ul li a').forEach((item) => {
 
@@ -88,27 +136,6 @@ document.querySelectorAll('.section-skills-card').forEach((item) => {
 
 });
 
-// Adiciona eventos de mouse aos botões da section projects
-document.querySelectorAll('.btn-view').forEach((item) => {
-    item.addEventListener('mouseover', () => {
-
-        item.style.transition = "background-color 0.5s";
-        item.style.backgroundColor = "var(--blue2)";
-        item.style.color = "var(--white)"
-        item.style.borderColor = "var(--white)";
-        item.style.fontWeight = "700";
-
-    });
-
-    item.addEventListener('mouseleave', () =>{
-        item.style.backgroundColor = "var(--white)";
-        item.style.color = "var(--blue4)";
-        item.style.borderColor = "var(--blue4)";
-        item.style.fontWeight = "400";
-
-    })
-});
-
 //Adiciona um evento de click ao menu mobile que o abre
 document.querySelector('.menu-mobile').addEventListener('click', () => {
 
@@ -141,4 +168,31 @@ document.querySelectorAll('.content-menu-mobile ul li a').forEach((item) => {
 
     });
     
-})
+});
+
+// Adiciona um evento de click aos botões que abre o modal
+document.querySelectorAll('.section-cg-projects .btn-view').forEach((item) => {
+    item.addEventListener('click', () => {
+
+        openModal();
+
+    });
+});
+
+// Adiciona um evento de click aos botões que fecha o modal
+document.querySelector('.close-modal img').addEventListener('click', () => {
+
+    let modal = document.querySelector('.projects-modal');
+
+    modal.style.display = "none"
+
+});
+
+// Abre o modal
+function openModal(){
+
+    let modal = document.querySelector('.projects-modal');
+
+    modal.style.display = 'flex';
+    
+}
