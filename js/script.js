@@ -77,14 +77,12 @@ document.querySelectorAll('.section-skills-card').forEach((item) => {
     item.addEventListener('mouseover', () => {
 
         item.style.transition = 'all .25s'
-        item.style.width = '208px'
-        item.style.height = '232px'
+        item.style.width = '228px'
     });
 
     item.addEventListener('mouseout', () => {
 
         item.style.width = '196px'
-        item.style.height = '216px'
 
     });
 
