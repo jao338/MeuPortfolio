@@ -171,7 +171,7 @@ document.querySelectorAll('.content-menu-mobile ul li a').forEach((item) => {
 });
 
 // Adiciona um evento de click aos botões que abre o modal
-document.querySelectorAll('.btn').forEach((item,index) => {
+document.querySelectorAll('.section-project-up').forEach((item,index) => {
 
     item.addEventListener('click', () => {
 
@@ -198,7 +198,7 @@ window.onload = function(){
         item.style.backgroundSize = 'cover';
         item.style.backgroundPosition = 'center';
 
-        //item.setAttribute('data-id', `${index + 1}`);
+        item.setAttribute('data-id', `${index + 1}`);
         
     });
 
@@ -211,10 +211,6 @@ function openModal(index){
     let modalImg = document.querySelector('.project-modal-img');
 
     modal.style.display = 'flex';
-
-    if(index + 1 == 4 || index + 1 == 5 || index + 1 == 6){
-        modal.style.display = 'none';
-    }else{
-        modalImg.style.backgroundImage = `url(../img/imgs/projects/${index + 1}.jpg)`;
-    }
+    modalImg.style.backgroundImage = `url(../img/imgs/projects/${index + 1}.jpg)`;
+    
 }
