@@ -247,3 +247,26 @@ function openModal(index){
     modalImg.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/img/imgs/projects/${index + 1}.jpg)`;
     
 }
+
+let cls = document.querySelector('.btn-close');
+let left = document.querySelector('.btn-left');
+let right = document.querySelector('.btnright');
+let leftC = document.querySelector('.btn-left-content');
+let rightC = document.querySelector('.btn-right-content');
+
+cls.addEventListener('mouseover', () => {
+
+    leftC.style.width = '100%';
+    rightC.style.width = '100%';
+    rightC.style.opacity = 1;
+    leftC.style.opacity = 1;
+
+});
+
+cls.addEventListener('mouseout', () => {
+
+    leftC.style.width = '0%';
+    rightC.style.width = '0%';
+    rightC.style.opacity = 0;
+    leftC.style.opacity = 0;
+})

@@ -866,3 +866,43 @@ footer img:first-child {
     }
 
 }
+
+.btn-close{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-left{
+    position: absolute;
+    width: 56px;
+    height: 12px;
+    transform-origin: center;
+    transform: rotate(45deg);
+    background-color: var(--blue3);
+    border-radius: 8px;
+}
+
+.btn-right{
+    position: absolute;
+    width: 56px;
+    height: 12px;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    background-color: var(--blue3);
+    border-radius: 8px;
+}
+
+.btn-left-content, .btn-right-content{
+    width: 0%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #2699FB;
+    transition: all 1s;
+    opacity: 0;
+}
+
