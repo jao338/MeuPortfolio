@@ -194,7 +194,7 @@ window.onload = function(){
     document.querySelectorAll('.section-project-up').forEach((item, index) => {
 
         
-        item.style.backgroundImage = `url(../img/imgs/projects/${index + 1}.jpg)`;
+        item.style.backgroundImage = `url(../docs/assets/${index + 1}.jpg)`;
         item.style.backgroundSize = 'cover';
         item.style.backgroundPosition = 'center';
 
