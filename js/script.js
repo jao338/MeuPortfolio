@@ -211,6 +211,6 @@ function openModal(index){
     let modalImg = document.querySelector('.project-modal-img');
 
     modal.style.display = 'flex';
-    modalImg.style.backgroundImage = `url(../img/imgs/projects/${index + 1}.jpg)`;
+    modalImg.style.backgroundImage = `url(../docs/assets/${index + 1}.jpg)`;
     
 }
