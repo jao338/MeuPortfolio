@@ -110,7 +110,6 @@ header {
     height: 60vh;
     position: fixed;
     top: 0;
-    left: 100vw;
     overflow-x: hidden;
     transition: all .8s;
     display: flex;

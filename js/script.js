@@ -139,21 +139,42 @@ document.querySelectorAll('.section-skills-card').forEach((item) => {
 //Adiciona um evento de click ao menu mobile que o abre
 document.querySelector('.menu-mobile').addEventListener('click', () => {
 
-    let menu = document.querySelector('.div-menu-mobile');
+    let divMenu = document.querySelector('.div-menu-mobile');
+    let menu = document.querySelector('.menu-mobile');
+    let img = document.createElement('img');
 
-    menu.style.left = '0vw';
-    menu.style.opacity = 100;
+    if (divMenu.style.left == '100vw') {
 
-});
+        divMenu.style.left = '0vw';
+        divMenu.style.opacity = 100;
 
-// Adiciona um evento de click ao menu mobile que o fecha
-document.querySelector('.close-menu-mobile img:last-child').addEventListener('click', () => {
+        menu.innerHTML = '';
 
-    let menu = document.querySelector('.div-menu-mobile');
+        img.setAttribute('src', 'img/icon/close_white.png');
+        img.setAttribute('width', '32px');
+        img.setAttribute('height', '32px');
 
-    menu.style.left = '100vw';
-    menu.style.opacity = 0;
- 
+        menu.appendChild(img);
+
+    }else{
+
+        menu.innerHTML = '';
+
+        for (let index = 0; index < 3; index++) {
+
+            let border = document.createElement('div');
+
+            border.classList.add('menu-border');
+
+            menu.appendChild(border);
+
+        }
+
+        divMenu.style.left = '100vw';
+        divMenu.style.opacity = 0;
+        
+
+    }
 });
 
 //Adiciona o evento de click as opções do menu mobile que fecha o menu mobile
@@ -164,7 +185,7 @@ document.querySelectorAll('.content-menu-mobile ul li a').forEach((item) => {
         let menu = document.querySelector('.div-menu-mobile');
 
         menu.style.left = '100vw';
-        menu.style.opacity = 0;
+        menu.style.opacity = 100;
 
     });
     
@@ -194,7 +215,7 @@ window.onload = function(){
     document.querySelectorAll('.section-project-up').forEach((item, index) => {
 
         
-        item.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/docs/assets/Images/${index + 1}.jpg)`;
+        item.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/img/imgs/projects/${index + 1}.jpg)`;
         item.style.backgroundSize = 'cover';
         item.style.backgroundPosition = 'center';
 
@@ -211,6 +232,6 @@ function openModal(index){
     let modalImg = document.querySelector('.project-modal-img');
 
     modal.style.display = 'flex';
-    modalImg.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/docs/assets/Images/${index + 1}.jpg)`;
+    modalImg.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/img/imgs/projects/${index + 1}.jpg)`;
     
 }
