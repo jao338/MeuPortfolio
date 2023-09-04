@@ -194,7 +194,7 @@ window.onload = function(){
     document.querySelectorAll('.section-project-up').forEach((item, index) => {
 
         
-        item.style.backgroundImage = `url(../docs/assets/${index + 1}.jpg)`;
+        item.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/docs/assets/${index + 1}.jpg)`;
         item.style.backgroundSize = 'cover';
         item.style.backgroundPosition = 'center';
 
@@ -211,6 +211,6 @@ function openModal(index){
     let modalImg = document.querySelector('.project-modal-img');
 
     modal.style.display = 'flex';
-    modalImg.style.backgroundImage = `url(../docs/assets/${index + 1}.jpg)`;
+    modalImg.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/docs/assets/${index + 1}.jpg)`;
     
 }
