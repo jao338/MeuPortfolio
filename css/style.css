@@ -441,17 +441,21 @@ header {
 }
 
 .btn-view{
-    font-size: 12pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     width: 35%;
     height: 40%;
     border: 2px solid var(--blue4);
     border-radius: 50px;
+    background-color: var(--white);
     color: var(--blue4);
-    background-color: none;
+    font-size: 12pt;
     cursor: pointer;
 }
 
-.btn-github, .btn-demo{
+.btn-github{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,12 +476,6 @@ header {
 }
 
 .btn-view:hover{
-    background-color: var(--blue2);
-    color: var(--white);
-    border: 3px solid var(--white);
-}
-
-.btn-demo:hover{
     background-color: var(--blue2);
     color: var(--white);
     border: 3px solid var(--white);

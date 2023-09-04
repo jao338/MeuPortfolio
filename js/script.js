@@ -191,7 +191,7 @@ document.querySelectorAll('.content-menu-mobile ul li a').forEach((item) => {
     
 });
 
-// Adiciona um evento de click aos botões que abre o modal
+// Adiciona um evento de click as imagens que abre o modal
 document.querySelectorAll('.section-project-up').forEach((item,index) => {
 
     item.addEventListener('click', () => {
@@ -199,6 +199,18 @@ document.querySelectorAll('.section-project-up').forEach((item,index) => {
         openModal(index);
 
     });
+});
+
+// Adiciona um evento de click aos botões que abre o modal
+document.querySelectorAll('.btn-view').forEach((item, index) => {
+    item.addEventListener('click', () => {
+
+        if((index == '3' || index == '4' || index == '5')){
+            
+        }else{
+            openModal(index);
+        }
+    })
 });
 
 // Adiciona um evento de click aos botões que fecha o modal
