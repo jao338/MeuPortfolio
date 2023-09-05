@@ -46,10 +46,13 @@ let imgs = [
     }
 ]
 
+let close_modal = document.querySelector('.projects-modal .btn-close');
+let modal_leftC = document.querySelector('.projects-modal .btn-left-content');
+let modal_rightC = document.querySelector('.projects-modal .btn-right-content');
 
-let cls = document.querySelector('.btn-close');
-let leftC = document.querySelector('.btn-left-content');
-let rightC = document.querySelector('.btn-right-content');
+let close_mobile = document.querySelector('.div-menu-mobile .btn-close');
+let mobile_leftC = document.querySelector('.div-menu-mobile .btn-left-content');
+let mobile_rightC = document.querySelector('.div-menu-mobile .btn-right-content');
 
 //Adiciona os efeitos de transição entre os links e as sections
 document.querySelectorAll('ul li a').forEach((item) => {
@@ -252,24 +255,6 @@ function openModal(index){
     
 }
 
-//Botão de fechar feito com css
-cls.addEventListener('mouseover', () => {
-
-    leftC.style.width = '100%';
-    rightC.style.width = '100%';
-    rightC.style.opacity = 1;
-    leftC.style.opacity = 1;
-
-});
-
-cls.addEventListener('mouseout', () => {
-
-    leftC.style.width = '0%';
-    rightC.style.width = '0%';
-    rightC.style.opacity = 0;
-    leftC.style.opacity = 0;
-});
-
 document.querySelectorAll('.section-project').forEach((item) => {
 
     item.addEventListener('mouseover', () => {
@@ -286,4 +271,41 @@ document.querySelectorAll('.section-project').forEach((item) => {
 
 });
 
+//Botão de fechar feito com css
+close_modal.addEventListener('mouseover', () => {
+
+    modal_leftC.style.width = '100%';
+    modal_rightC.style.width = '100%';
+    modal_rightC.style.opacity = 1;
+    modal_leftC.style.opacity = 1;
+
+});
+
+close_modal.addEventListener('mouseout', () => {
+
+    modal_leftC.style.width = '0%';
+    modal_rightC.style.width = '0%';
+    modal_rightC.style.opacity = 0;
+    modal_leftC.style.opacity = 0;
+    
+});
+
+//Botão de fechar feito com css
+close_mobile.addEventListener('mouseover', () => {
+
+    mobile_leftC.style.width = '100%';
+    mobile_rightC.style.width = '100%';
+    mobile_rightC.style.opacity = 1;
+    mobile_leftC.style.opacity = 1;
+
+});
+
+close_mobile.addEventListener('mouseout', () => {
+
+    mobile_leftC.style.width = '0%';
+    mobile_rightC.style.width = '0%';
+    mobile_rightC.style.opacity = 0;
+    mobile_leftC.style.opacity = 0;
+    
+});
 
