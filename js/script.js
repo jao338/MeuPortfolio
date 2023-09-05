@@ -170,6 +170,7 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
 
             menu.appendChild(border);
 
+
         }
 
         divMenu.style.left = '100vw';
@@ -209,7 +210,9 @@ document.querySelectorAll('.btn-view').forEach((item, index) => {
         if((index == '3' || index == '4' || index == '5')){
             
         }else{
+            
             openModal(index);
+
         }
     })
 });

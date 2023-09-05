@@ -96,7 +96,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .menu-border{
@@ -381,7 +381,6 @@ header {
     top: 12vh;
     width: 80vw;
     height: 88vh;
-    z-index: 999;
     display: none;
     justify-content: center;
     align-items: center;
