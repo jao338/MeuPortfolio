@@ -46,6 +46,11 @@ let imgs = [
     }
 ]
 
+
+let cls = document.querySelector('.btn-close');
+let leftC = document.querySelector('.btn-left-content');
+let rightC = document.querySelector('.btn-right-content');
+
 //Adiciona os efeitos de transição entre os links e as sections
 document.querySelectorAll('ul li a').forEach((item) => {
 
@@ -141,20 +146,17 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
 
     let divMenu = document.querySelector('.div-menu-mobile');
     let menu = document.querySelector('.menu-mobile');
-    let img = document.createElement('img');
+    let btn = document.querySelector('.btn-close').cloneNode(true);
 
     if (divMenu.style.left == '100vw') {
 
         divMenu.style.left = '0vw';
-        divMenu.style.opacity = 100;
+        divMenu.style.opacity = 1;
 
         menu.innerHTML = '';
 
-        img.setAttribute('src', 'img/icon/close_white.png');
-        img.setAttribute('width', '32px');
-        img.setAttribute('height', '32px');
+        menu.appendChild(btn);
 
-        menu.appendChild(img);
 
     }else{
 
@@ -172,7 +174,6 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
 
         divMenu.style.left = '100vw';
         divMenu.style.opacity = 0;
-        
 
     }
 });
@@ -214,7 +215,7 @@ document.querySelectorAll('.btn-view').forEach((item, index) => {
 });
 
 // Adiciona um evento de click aos botões que fecha o modal
-document.querySelector('.close-modal img').addEventListener('click', () => {
+document.querySelector('.projects-modal .btn-close').addEventListener('click', () => {
 
     let modal = document.querySelector('.projects-modal');
 
@@ -248,12 +249,7 @@ function openModal(index){
     
 }
 
-let cls = document.querySelector('.btn-close');
-let left = document.querySelector('.btn-left');
-let right = document.querySelector('.btnright');
-let leftC = document.querySelector('.btn-left-content');
-let rightC = document.querySelector('.btn-right-content');
-
+//Botão de fechar feito com css
 cls.addEventListener('mouseover', () => {
 
     leftC.style.width = '100%';
@@ -269,4 +265,22 @@ cls.addEventListener('mouseout', () => {
     rightC.style.width = '0%';
     rightC.style.opacity = 0;
     leftC.style.opacity = 0;
-})
+});
+
+document.querySelectorAll('.section-project').forEach((item) => {
+
+    item.addEventListener('mouseover', () => {
+        item.style.transform = 'scale(1.1)';
+        item.style.marginRight = '48px';
+
+    });
+
+    item.addEventListener('mouseout', () => {
+        item.style.transform = 'scale(1)';
+        item.style.marginRight = '40px';
+
+    });
+
+});
+
+

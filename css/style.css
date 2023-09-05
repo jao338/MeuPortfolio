@@ -96,6 +96,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 999;
 }
 
 .menu-border{
@@ -345,7 +346,7 @@ header {
 .section-projects-titles {
     font-size: 16pt;
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
 }
 
 .section-projects-content {
@@ -354,7 +355,7 @@ header {
 }
 
 .section-project {
-    margin-right: 32px;
+    margin-right: 40px;
     height: 90%;
     width: 504px;
     display: flex;
@@ -373,10 +374,6 @@ header {
     border-top-right-radius: 10%;
     border: 3px solid var(--blue4);
     cursor: pointer;
-}
-
-.section-project:hover{
-    transform: scale(1.1);
 }
 
 .projects-modal{
@@ -409,14 +406,14 @@ header {
     background-color: var(--blue2);
 }
 
-.close-modal{
+.projects-modal .btn-close{
+    width: 100%;
     position: absolute;
     top: 0;
-    width: 100%;
     display: flex;
-    justify-content: end;
-    padding-top: 32px;
-    padding-right: 32px;
+    align-items: end;
+    padding-right: 40px;
+    padding-top: 40px;
     cursor: pointer;
 }
 
@@ -436,7 +433,7 @@ header {
     margin-left: 32px;
 }
 
-.section-web-projects .section-project-down .btn-demo{
+.section-web-projects .section-project-down .btn-view{
     margin-left: 32px;
 }
 
@@ -626,9 +623,26 @@ footer img:first-child {
         margin-left: 0px;
     }
 
-    .btn-view{
+    .section-cg-projects .btn-view{
         width: 70%;
         height: 50%;
+    }
+
+    .section-all-projects .btn-view{
+        width: 70%;
+        height: 50%;
+    }
+
+    .section-web-projects .btn-view{
+        margin-left: 8px;
+        width: 40%;
+        height: 40%;
+    }
+
+    .btn-github{
+        margin-right: 8px;
+        width: 40%;
+        height: 40%;
     }
 
 }
@@ -658,10 +672,23 @@ footer img:first-child {
     .section-contact-down {
         width: 70%;
     }
-
-    .btn-view{
+   
+    .section-cg-projects .btn-view{
         width: 80%;
         height: 40%;
+    }
+
+    .section-all-projects .btn-view{
+        width: 80%;
+        height: 40%;
+    }
+
+    .section-web-projects .btn-view{
+        height: 30%;
+    }
+
+    .btn-github{
+        height: 30%;
     }
 
     .section-project:last-child{
@@ -687,9 +714,14 @@ footer img:first-child {
         width: 80%;
     }
 
-    .btn-view{
+    .section-cg-projects .btn-view{
+        width: 80%;
+        height: 30%;
+    }
+
+    .section-all-projects .btn-view{
         width: 90%;
-        height: 40%;
+        height: 30%;
     }
 
     .section-all-projects,
