@@ -113,14 +113,14 @@ document.querySelectorAll('.input-contact').forEach((input) => {
 
     input.addEventListener('focus', () => {
 
-        input.style.borderBottom = '6px solid var(--white)';
+        input.style.borderBottom = '6px solid var(--black)';
         input.style.transition = "all .5s";
         input.style.marginTop = '16px';
     });
 
     input.addEventListener('focusout', () => {
        
-        input.style.borderBottom = '2px solid var(--white)';
+        input.style.borderBottom = '2px solid var(--black)';
         input.style.transition = "all .5s";
         input.style.marginTop = '0px';
 ;
@@ -259,13 +259,11 @@ document.querySelectorAll('.section-project').forEach((item) => {
 
     item.addEventListener('mouseover', () => {
         item.style.transform = 'scale(1.1)';
-        item.style.marginRight = '48px';
 
     });
 
     item.addEventListener('mouseout', () => {
         item.style.transform = 'scale(1)';
-        item.style.marginRight = '40px';
 
     });
 
