@@ -105,7 +105,6 @@ header {
     border-bottom: 3px solid var(--white);
 }
 
-
 .div-menu-mobile{
     width: 100vw;
     height: 60vh;
@@ -130,6 +129,18 @@ header {
 
 .close-menu-mobile img:first-child{
     margin-left: 32px;
+}
+
+.menu-mobile-bg{
+    position: fixed;
+    display: flex;
+    top: 57vh;
+    left: 100vw;
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, .7);
+    transition: all .8s;
+    overflow-x: hidden;
 }
 
 .content-menu-mobile{

@@ -132,13 +132,13 @@ document.querySelectorAll('.section-skills-card').forEach((item) => {
 
     item.addEventListener('mouseover', () => {
 
-        item.style.transition = 'all .25s'
-        item.style.width = '228px'
+        item.style.transition = 'all .25s';
+        item.style.width = '228px';
     });
 
     item.addEventListener('mouseout', () => {
 
-        item.style.width = '196px'
+        item.style.width = '196px';
 
     });
 
@@ -150,8 +150,13 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
     let divMenu = document.querySelector('.div-menu-mobile');
     let menu = document.querySelector('.menu-mobile');
     let btn = document.querySelector('.btn-close').cloneNode(true);
+    let bg = document.querySelector('.menu-mobile-bg');
 
     if (divMenu.style.left == '100vw') {
+
+        bg.style.display = 'flex';
+        bg.style.zIndex = '1';        
+        bg.style.left = '0vw';
 
         divMenu.style.left = '0vw';
         divMenu.style.opacity = '1';
@@ -163,6 +168,9 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
 
 
     }else{
+
+        bg.style.display = 'none';
+        bg.style.left = '100vw';
 
         menu.innerHTML = '';
 
