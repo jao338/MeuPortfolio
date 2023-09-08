@@ -154,7 +154,8 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
     if (divMenu.style.left == '100vw') {
 
         divMenu.style.left = '0vw';
-        divMenu.style.opacity = 1;
+        divMenu.style.opacity = '1';
+        divMenu.style.zIndex = '1';
 
         menu.innerHTML = '';
 
@@ -226,6 +227,7 @@ document.querySelector('.projects-modal .btn-close').addEventListener('click', (
     let modal = document.querySelector('.projects-modal');
 
     modal.style.display = "none";
+    modal.style.width = '0vw';
 
 });
 
@@ -252,7 +254,7 @@ function openModal(index){
     let modalImg = document.querySelector('.project-modal-img');
 
     modal.style.display = 'flex';
-    modal.style.width = '100vw'
+    modal.style.width = '100vw';
     modalImg.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/img/imgs/projects/${index + 1}.jpg)`;
     
 }

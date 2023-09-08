@@ -97,7 +97,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 9999;
 }
 
 .menu-border{
@@ -374,7 +373,7 @@ header {
 .projects-modal{
     position: fixed;
     top: 12vh;
-    left: 0;
+    left: 0vw;
     width: 90vw;
     height: 88vh;
     display: none;
@@ -907,11 +906,9 @@ footer p:last-child a:hover{
         width: 32px;
         height: 32px;
     }
-
 }
 
 @keyframes btn-send{
-
     0%{
         transform: rotate(0deg) scale(1);
     }
@@ -927,5 +924,4 @@ footer p:last-child a:hover{
     100%{
         transform: rotate(0deg) scale(1);
     }
-
 }

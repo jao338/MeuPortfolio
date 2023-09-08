@@ -1,1 +1,0 @@
-Na devtools possui um recurso que permite tirar um print da página interia
