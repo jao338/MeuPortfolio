@@ -182,7 +182,6 @@ document.querySelector('.menu-mobile').addEventListener('click', () => {
 
             menu.appendChild(border);
 
-
         }
 
         divMenu.style.left = '100vw';
@@ -196,10 +195,27 @@ document.querySelectorAll('.content-menu-mobile ul li a').forEach((item) => {
 
     item.addEventListener('click', () =>{
 
-        let menu = document.querySelector('.div-menu-mobile');
+        let divMenu = document.querySelector('.div-menu-mobile');
+        let bg = document.querySelector('.menu-mobile-bg');    
+        let menu = document.querySelector('.menu-mobile');
 
-        menu.style.left = '100vw';
-        menu.style.opacity = 100;
+        bg.style.left = '100vw';
+
+        divMenu.style.left = '100vw';
+        divMenu.style.opacity = 100;
+
+        menu.innerHTML = '';
+
+        for (let index = 0; index < 3; index++) {
+
+            let border = document.createElement('div');
+
+            border.classList.add('menu-border');
+
+            menu.appendChild(border);
+
+
+        }
 
     });
     
