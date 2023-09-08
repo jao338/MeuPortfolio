@@ -531,7 +531,6 @@ header {
     animation: btn-send 3s infinite alternate;
 }
 
-
 .btn-close{
     width: 64px;
     height: 64px;
@@ -916,6 +915,18 @@ footer p:last-child a:hover{
     .social-media a img{
         width: 32px;
         height: 32px;
+    }
+
+    footer p:nth-child(2){
+        display: none;
+    }
+
+    footer .container{
+        justify-content: center;
+    }
+
+    footer p:last-child a:first-child{
+        margin-left: 0px;
     }
 }
 
