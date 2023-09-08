@@ -134,11 +134,11 @@ header {
 .menu-mobile-bg{
     position: fixed;
     display: flex;
-    top: 57vh;
+    top: 54vh;
     left: 100vw;
     width: 100vw;
     height: 60vh;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, 0.01);
     transition: all .8s;
     overflow-x: hidden;
 }
