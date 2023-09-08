@@ -229,6 +229,7 @@ document.querySelector('.projects-modal .btn-close').addEventListener('click', (
 
 });
 
+// Carrega as imagens da section de projetos
 window.onload = function(){
 
     document.querySelectorAll('.section-project-up').forEach((item, index) => {
@@ -251,6 +252,7 @@ function openModal(index){
     let modalImg = document.querySelector('.project-modal-img');
 
     modal.style.display = 'flex';
+    modal.style.width = '100vw'
     modalImg.style.backgroundImage = `url(https://jao338.github.io/MeuPortfolio/img/imgs/projects/${index + 1}.jpg)`;
     
 }
